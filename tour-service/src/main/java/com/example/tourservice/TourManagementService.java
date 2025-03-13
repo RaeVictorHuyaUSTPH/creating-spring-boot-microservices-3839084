@@ -3,7 +3,9 @@ package com.example.tourservice;
 import org.springframework.stereotype.Service;
 
 import com.example.tourservice.utilities.TourRepository;
-
+/*
+ * Add @Service
+ */
 @Service
 public class TourManagementService {
     private TourRepository tourRepository;

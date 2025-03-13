@@ -8,7 +8,9 @@ import com.example.tourservice.TravelAgentService;
 public class Application {
 
     public static void main(String[] args) {
-
+/*
+ * Use package scanning, what package to start scanning for Spring beans, annotations
+ */
         ApplicationContext context = new AnnotationConfigApplicationContext(Application.class.getPackageName());
         TravelAgentService agent = context.getBean(TravelAgentService.class);
         System.out.println("\n******Explore California Tour Catalogue******");

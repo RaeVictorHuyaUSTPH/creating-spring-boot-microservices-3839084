@@ -5,12 +5,15 @@ import java.util.*;
 import org.springframework.stereotype.Repository;
 
 import com.example.tourservice.Tour;
-
+/*
+ * Add @Repository 
+ */
 @Repository
 public class TourRepository {
     private final List<Tour> tours = new ArrayList<>();
 
     public TourRepository() {
+        
     }
 
     public Tour save(Tour tour) {
