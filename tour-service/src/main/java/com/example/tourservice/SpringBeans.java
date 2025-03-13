@@ -4,11 +4,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.example.tourservice.utilities.TourRepository;
-
+/*
+ * This is the configuration for the dependency injection
+ */
 @Configuration
 public class SpringBeans {
- 
-  @Bean
+ //Set the dependency between the classes
+  
+ @Bean
   public TourRepository tourRepository() {
     return new TourRepository();
   }
