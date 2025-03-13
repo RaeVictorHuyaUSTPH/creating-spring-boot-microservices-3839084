@@ -3,10 +3,13 @@ package com.example;
 import com.example.tourservice.TourManagementService;
 import com.example.tourservice.TravelAgentService;
 import com.example.tourservice.utilities.TourRepository;
-
+/*
+ * The problem with this approach is that the main class,
+ * its responsible for the interdependencies
+ */
 public class Application {
     public static void main(String[] args) {
-        //Hi
+        
         // Must create Repo First
         TourRepository repo = new TourRepository();
         TravelAgentService agent = new TravelAgentService(repo);

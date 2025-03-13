@@ -3,6 +3,9 @@ package com.example.tourservice;
 import com.example.tourservice.utilities.TourRepository;
 
 public class TourManagementService {
+   /*
+    * Has a dependency on Tour Repository class
+    */
     private TourRepository tourRepository;
 
     public TourManagementService(TourRepository tourRepository) {

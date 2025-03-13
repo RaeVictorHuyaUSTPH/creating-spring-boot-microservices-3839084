@@ -3,7 +3,9 @@ package com.example.tourservice.utilities;
 import java.util.*;
 
 import com.example.tourservice.Tour;
-
+/*
+ * Tour Repository which is going to keep a list in memory of tours
+ */
 public class TourRepository {
   private final List<Tour> tours = new ArrayList<>();
 
