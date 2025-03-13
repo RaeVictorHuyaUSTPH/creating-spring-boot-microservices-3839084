@@ -30,7 +30,11 @@ public class ExplorecaliJpaApplication implements CommandLineRunner {
 
         SpringApplication.run(ExplorecaliJpaApplication.class, args);
     }
-
+/*
+ * Run method passes any command line arguments
+ * setup database before permitting web requests
+ * since run method is at object scope we can access those injected service
+ */
     @Override
     public void run(String... args) throws Exception {
         createTourAllPackages();
